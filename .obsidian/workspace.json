@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法笔记/图论/拓扑排序.md",
+                "file": "算法题解/Codeforces/CF-1385E-Directing Edges.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "拓扑排序"
+              "title": "CF-1385E-Directing Edges"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法笔记/图论/拓扑排序.md",
+                "file": "算法题解/Codeforces/CF-1385E-Directing Edges.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "拓扑排序 的大纲"
+              "title": "CF-1385E-Directing Edges 的大纲"
             }
           },
           {
@@ -196,11 +196,11 @@
   },
   "active": "653a5ded82bdb4f3",
   "lastOpenFiles": [
-    "算法笔记/Others/算法的杂七杂八的东西.md",
-    "算法笔记/Others/位运算的奇技淫巧.md",
-    "算法笔记/算法概论.md",
-    "算法题解/Codeforces/1385E-Directing Edges.md",
     "算法笔记/图论/拓扑排序.md",
+    "算法笔记/Others/位运算的奇技淫巧.md",
+    "算法题解/Codeforces/CF-1385E-Directing Edges.md",
+    "算法笔记/Others/算法的杂七杂八的东西.md",
+    "算法笔记/算法概论.md",
     "算法题解/Codeforces",
     "算法题解",
     "算法笔记/算法/DP/数位DP.md",
