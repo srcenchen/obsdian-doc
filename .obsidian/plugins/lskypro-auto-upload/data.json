@@ -1,0 +1,14 @@
+{
+  "uploadByClipSwitch": true,
+  "uploader": "LskyPro",
+  "token": "3|RN45TBZa2NxpAarhI9OXcgorbpTwBFLOK0dg66Th",
+  "strategy_id": "",
+  "uploadServer": "http://image.506.zhiyuansofts.cn/",
+  "imageSizeSuffix": "",
+  "workOnNetWork": false,
+  "fixPath": false,
+  "applyImage": true,
+  "newWorkBlackDomains": "",
+  "deleteSource": false,
+  "uploadedImages": []
+}

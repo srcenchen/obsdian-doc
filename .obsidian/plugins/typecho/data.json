@@ -1,0 +1,11 @@
+{
+  "Host": "http://blog.ehsan.zhiyuansofts.cn/index.php/api",
+  "Token": "123456",
+  "User": {
+    "uid": 1,
+    "mail": "srcenchen@gmail.com",
+    "url": "http://192.168.1.7:10082",
+    "screenName": "sanenchen"
+  },
+  "enablePasteUpload": false
+}

@@ -1,0 +1,11 @@
+{
+  "disabledLanguages": [],
+  "customThemeFolder": "",
+  "customLanguageFolder": "",
+  "theme": "dark-plus",
+  "renderMode": "textarea",
+  "renderEngine": "shiki",
+  "saveMode": "onchange",
+  "preferThemeColors": true,
+  "inlineHighlighting": true
+}
