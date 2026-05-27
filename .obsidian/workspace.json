@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "算法笔记/数据结构/对顶堆.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -181,8 +181,7 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "remotely-save:Remotely Save": false
+      "command-palette:打开命令面板": false
     }
   },
   "active": "92b26a316b3e0540",
