@@ -1,0 +1,108 @@
+[CF1385E](https://vjudge.net/problem/CodeForces-1385E#author=translator:1281309:zh)
+给你一个包含 nn 个顶点和 mm 条边的图。图不一定是连通的。有些边已经是有向的，方向不能改；另外一些是无向边，你需要给这些无向边选定一个方向。
+
+你的任务是给所有无向边指定方向，使得最终的图是有向无环图（也就是说，所有边都有方向，且不存在有向环）。记住，所有无向边都必须被定向。
+
+你需要回答 tt 组独立的测试用例。
+
+### 输入格式
+
+第一行输入一个整数 tt (1≤t≤2⋅1041≤t≤2⋅104) — 测试用例的数量。接下来有 tt 组测试数据。
+
+每组测试的第一行包含两个整数 nn 和 mm (2≤n≤2⋅1052≤n≤2⋅105, 1≤m≤min(2⋅105,n(n−1)2)1≤m≤min(2⋅105,2n(n−1)​)) — 图中顶点数和边数。
+
+接下来 mm 行描述图的边。第 ii 条边由三个整数 titi​、xixi​ 和 yiyi​ (ti∈[0;1]ti​∈[0;1], 1≤xi,yi≤n1≤xi​,yi​≤n) 表示 — 边的类型（ti=0ti​=0 表示无向边，ti=1ti​=1 表示有向边）以及边连接的顶点（无向边连接顶点 xixi​ 和 yiyi​，有向边从顶点 xixi​ 指向顶点 yiyi​）。保证图中没有自环（即没有顶点连接自身的边）和重边（即对于每对顶点 (xi,yixi​,yi​)，不存在其他边 (xi,yixi​,yi​) 或 (yi,xiyi​,xi​)）。
+
+保证所有测试用例中，顶点数和边数的总和不超过 2⋅1052⋅105 (∑n≤2⋅105∑n≤2⋅105; ∑m≤2⋅105∑m≤2⋅105)。
+
+### 输出格式
+
+对于每组测试，如果无法给无向边定向使得图成为有向无环图，输出 "NO"。否则，第一行输出 "YES"，接着输出 mm 行，描述最终定向后的有向无环图的所有边（顺序不限）。注意，已经有向的边方向不能更改。如果有多种答案，输出任意一种即可。
+
+### 样例
+
+|Input复制|Output复制|
+|---|---|
+|4<br>3 1<br>0 1 3<br>5 5<br>0 2 1<br>1 1 5<br>1 5 4<br>0 5 2<br>1 3 5<br>4 5<br>1 1 2<br>0 4 3<br>1 3 1<br>0 2 3<br>1 2 4<br>4 5<br>1 4 1<br>1 1 3<br>0 1 2<br>1 2 4<br>1 3 2|YES<br>3 1<br>YES<br>2 1<br>1 5<br>5 4<br>2 5<br>3 5<br>YES<br>1 2<br>3 4<br>3 1<br>3 2<br>2 4<br>NO|
+
+### 说明
+
+第二组测试样例的说明：
+
+![](https://cdn.vjudge.net.cn/8eabed04efee42334ec1e79618e3ef34)
+
+第三组测试样例的说明：
+
+![](https://cdn.vjudge.net.cn/712e84d844edd2b2fd2a8f3e9e9c98fc)
+
+``` cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+
+void solve() {
+    int n, m;
+    cin >> n >> m;
+    vector<vector<int>> g(n+1);
+    vector<int> pos(n+1);
+    vector<array<int, 2>> noneG;
+    vector<int> in(n+1);
+    for (int i = 0; i < m; ++i) {
+        int a, b, c;
+        cin >> a >> b >>c;
+        if (a) {
+            g[b].push_back(c);
+            in[c]++;
+        } else {
+            noneG.push_back({b, c});
+        }
+    }
+    queue<int> que;
+    for (int i = 1; i <= n; ++i) {
+        if (in[i] == 0) {
+            que.push(i);
+        }
+    }
+    int idx = 0;
+    while (!que.empty()) {
+        int c =que.front();
+        que.pop();
+        pos[c] = ++idx;
+        for (auto& i : g[c]) {
+            if (--in[i] == 0) {
+                que.push(i);
+            }
+        }
+    }
+    if (idx != n) {
+        // 出现环
+        cout << "NO" << endl;
+        return;
+    }
+    for (auto& [a, b] : noneG) {
+        if (pos[a] > pos[b]) {
+            // 谁小谁是父亲，因为入度少
+            g[b].push_back(a);
+        } else {
+            g[a].push_back(b);
+        }
+    }
+    cout << "YES" << endl;
+    for (int i = 1; i <= n; ++i) {
+        if (g[i].size() != 0) {
+            for (auto& k : g[i]) {
+                cout << i << " " << k << endl;
+            }
+        }
+    }
+}
+
+signed main() {
+    cin.tie(0);
+    ios::sync_with_stdio(false);
+    int T = 1;
+    cin >> T;
+    while(T--) solve();
+    return 0;
+}
+```
