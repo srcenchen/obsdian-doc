@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a3b91ed1b83d4144",
+        "id": "297047bd8c996f1c",
         "type": "tabs",
         "children": [
           {
-            "id": "92b26a316b3e0540",
+            "id": "653a5ded82bdb4f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法笔记/数据结构/对顶堆.md",
+                "file": "算法笔记/算法/DP/数位DP.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "对顶堆"
+              "title": "数位DP"
             }
           }
         ]
@@ -94,14 +94,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "算法笔记/数位DP.md",
+                "file": "算法笔记/算法/DP/数位DP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "数位DP 的反向链接列表"
@@ -113,9 +113,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "算法笔记/数位DP.md",
+                "file": "算法笔记/算法/DP/数位DP.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
               "title": "数位DP 的出链列表"
@@ -156,13 +156,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法笔记/数据结构/对顶堆.md",
+                "file": "算法笔记/算法/DP/数位DP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "对顶堆 的大纲"
+              "title": "数位DP 的大纲"
+            }
+          },
+          {
+            "id": "843219654e3b2d84",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -184,13 +194,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "92b26a316b3e0540",
+  "active": "c1f60adadee652bb",
   "lastOpenFiles": [
-    "算法笔记/算法/DP/数位DP.md",
-    "算法笔记/数据结构/对顶堆.md",
-    "算法笔记/Others/算法的杂七杂八的东西.md",
     "算法笔记/Others/位运算的奇技淫巧.md",
+    "算法笔记/Others/算法的杂七杂八的东西.md",
     "算法笔记/算法/二分法.md",
+    "算法笔记/算法概论.md",
+    "算法笔记/数据结构/对顶堆.md",
+    "算法笔记/算法/DP/数位DP.md",
     "算法笔记/Others",
     "算法笔记/算法/DP",
     "算法笔记/算法",

@@ -1,5 +1,10 @@
 {
   "theme": "system",
   "translucency": true,
-  "cssTheme": ""
+  "cssTheme": "",
+  "accentColor": "#339cff",
+  "monospaceFontFamily": "MapleMono-NF-CN-Regular",
+  "interfaceFontFamily": "",
+  "textFontFamily": ".苹方-简",
+  "nativeMenus": false
 }
