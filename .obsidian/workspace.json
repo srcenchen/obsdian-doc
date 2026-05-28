@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "CF-1385E-Directing Edges"
             }
-          },
-          {
-            "id": "67a8a302123b5640",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "算法题解/Codeforces/CF-1385E-Directing Edges.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "conflict-files-obsidian-git 的大纲"
+              "title": "CF-1385E-Directing Edges 的大纲"
             }
           },
           {
@@ -209,10 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "67a8a302123b5640",
+  "active": "653a5ded82bdb4f3",
   "lastOpenFiles": [
-    "算法题解/Codeforces/CF-1385E-Directing Edges.md",
     "conflict-files-obsidian-git.md",
+    "算法题解/Codeforces/CF-1385E-Directing Edges.md",
     "算法笔记/图论/拓扑排序.md",
     "算法笔记/Others/位运算的奇技淫巧.md",
     "算法笔记/Others/算法的杂七杂八的东西.md",
