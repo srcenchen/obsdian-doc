@@ -21,23 +21,8 @@
               "icon": "lucide-file",
               "title": "ABC-457"
             }
-          },
-          {
-            "id": "421399b018fe4e1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "19e759e270298827",
@@ -193,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "算法题解/Atcoder-ABC/ABC-457.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "conflict-files-obsidian-git 的大纲"
+              "title": "ABC-457 的大纲"
             }
           }
         ],
@@ -222,10 +207,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "421399b018fe4e1a",
+  "active": "92b26a316b3e0540",
   "lastOpenFiles": [
-    "算法题解/Atcoder-ABC/ABC-457.md",
     "conflict-files-obsidian-git.md",
+    "算法题解/Atcoder-ABC/ABC-457.md",
     "算法笔记/算法概论.md",
     "算法题解/Atcoder-ABC/未命名",
     "算法题解/Atcoder-ABC",
